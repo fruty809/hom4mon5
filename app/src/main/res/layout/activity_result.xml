@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_menu"
+    android:id="@+id/resultActivity"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:layout_marginHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:id="@+id/tv_first_name"
+        android:background="@drawable/design_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Первое имя"
+        android:textColor="@color/white"
+        android:layout_marginTop="180dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_marginHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:id="@+id/tv_second_name"
+        android:background="@drawable/design_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Второе имя"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_name"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_marginHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:id="@+id/tv_result"
+        android:background="@drawable/design_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Результат: 50%"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_second_name"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
