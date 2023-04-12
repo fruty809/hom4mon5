@@ -57,7 +57,7 @@ class LoveActivity : AppCompatActivity() {
     }
     fun getData(data: LoveModel){
         loveModel = data
-        val intent = Intent(this@LoveActivity, ResultActivity::class.java )
+        val intent = Intent(this@LoveActivity, ResultFragment::class.java )
         intent.putExtra("lovemodel", loveModel)
         startActivity(intent)
     }

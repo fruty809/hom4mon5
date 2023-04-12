@@ -18,7 +18,6 @@ import javax.inject.Singleton
 class AppModule {
     @Provides
     fun provideApi(): LoveApi {
-        Log.e("shh", "аппмодул")
         return Retrofit.Builder().baseUrl("https://love-calculator.p.rapidapi.com/")
             .addConverterFactory(
                 GsonConverterFactory.create()

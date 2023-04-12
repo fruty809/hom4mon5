@@ -8,7 +8,27 @@
     <fragment
         android:id="@+id/onBoardFragment"
         android:name="com.example.hom24mon5.onBoard.onBoardFragment"
-        android:label="fragment_on_board"
-        tools:layout="@layout/fragment_on_board" />
-
+        android:label="onBoardFragment" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.hom24mon5.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="love"
+            app:argType="com.example.hom24mon5.remote.LoveModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/loveMainFragment"
+        android:name="com.example.hom24mon5.LoveMainFragment"
+        android:label="LoveMainFragment" >
+        <action
+            android:id="@+id/action_loveMainFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.hom24mon5.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
 </navigation>
